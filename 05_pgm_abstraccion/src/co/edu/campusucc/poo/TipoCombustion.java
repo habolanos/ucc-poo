@@ -1,4 +1,4 @@
-package co.edu.campussucc.poo;
+package co.edu.campusucc.poo;
 
 public class TipoCombustion extends Vehiculo {
 

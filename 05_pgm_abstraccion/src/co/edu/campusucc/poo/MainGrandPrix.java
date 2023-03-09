@@ -1,6 +1,4 @@
-package co.edu.campussucc.poo;
-
-import co.edu.campussucc.poo.Vehiculo;
+package co.edu.campusucc.poo;
 
 public class MainGrandPrix {
     public static void main(String[] args) {
