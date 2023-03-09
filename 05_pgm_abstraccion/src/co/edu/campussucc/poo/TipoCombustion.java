@@ -1,20 +1,22 @@
 package co.edu.campussucc.poo;
 
-import co.edu.campusucc.poo.Vehiculo;
+public class TipoCombustion extends Vehiculo {
 
-public class VehiculoCombustion extends Vehiculo {
-
-    public VehiculoCombustion() {
+    public TipoCombustion() {
         super();
         setTipo("Combustion");
     }
 
     @Override
-    public void startingEngine() {
+    public void startingEngine(){
         System.out.println("✅ Check Fuel...⛽");
         for (int i = 0; i < 3 ; i++) {
             System.out.println("¡¡💥 Spark...💥!!");
-            Thread.sleep(1000-(i*200));
+            try {
+                Thread.sleep(1000-(i*200));
+            } catch (InterruptedException e) {
+                System.err.println("🛑:"+ e);
+            }
         }
         System.out.println("Started...🌟");
     }
@@ -24,10 +26,16 @@ public class VehiculoCombustion extends Vehiculo {
         System.out.println("✅ Check Engine 🚗");
         for (int i = 0; i < 2 ; i++) {
             System.out.println("¡¡🛑 Stoping Engine...🛑!!");
-            Thread.sleep(1000-(i*400));
+            try {
+                Thread.sleep(1000-(i*400));
+            } catch (InterruptedException e) {
+                System.err.println("🛑:"+ e);
+            }
         }
         System.out.println("Stoped...🛑");        
     }
 
-    
+    public String toString() {
+        return "Objeto TipoCombustion []";
+    }
 }
