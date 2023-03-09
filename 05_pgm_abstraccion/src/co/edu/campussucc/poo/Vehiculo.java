@@ -18,6 +18,13 @@ public abstract class Vehiculo {
     public abstract void stopingEngine();
 
     //Defined Behavior
+    public void sppedUp(){
+        for (int i = 0; i < 20 ; i++) {
+            System.out.println("¡¡⏩ speed up in Progress 🚀!!");
+            Thread.sleep(1000-(i*50));
+        }
+    }
+
     public void parking(){
         for (int i = 0; i < 10 ; i++) {
             System.out.println("¡¡🚥 Parking in Progress 🚥!!");
