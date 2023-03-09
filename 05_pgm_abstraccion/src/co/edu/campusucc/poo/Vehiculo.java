@@ -29,7 +29,7 @@ public abstract class Vehiculo {
             speedUpString +="⏩";
             System.out.println(speedUpString);
             try {
-                Thread.sleep(1000-(i*100));
+                Thread.sleep(1000-(velocidad+i*100));
             } catch (InterruptedException e) {
                 System.err.println("🛑:"+ e);
             }
@@ -40,13 +40,17 @@ public abstract class Vehiculo {
         setVelocidad(this.velocidad+velocidad);
         return getVelocidad();
     }
+    private int downSpeed(int velocidad){
+        setVelocidad(this.velocidad-velocidad);
+        return getVelocidad();
+    }
     public void currentSpeed(){
         System.out.println("Current Speed ⏩: "+getVelocidad());
     }
 
     public void parking(){
-        for (int i = 0; i < 10 ; i++) {
-            System.out.println("¡¡🚥 Parking in Progress 🚥!!");
+        for (int i = 0; i < 5 ; i++) {
+            System.out.println("¡¡⚠️ Parking in Progress ⚠️!!");
             try {
                 Thread.sleep(1000-(i*50));
             } catch (InterruptedException e) {
@@ -56,14 +60,20 @@ public abstract class Vehiculo {
     }
 
     public void breaking(){
+        String speedUpString = "";
+        for (int i = 0; i < velocidad; i++) {
+            speedUpString+="⏩";
+        }
         for (int i = 0; i < 10 ; i++) {
-            System.out.println("¡¡🚥 Braking in Progress 🚥!!");
+            speedUpString = speedUpString.substring(0, speedUpString.length() - 1);
+            System.out.println("¡¡🚥 Braking in Progress: "+speedUpString);
             try {
-                Thread.sleep(1000-(i*50));
+                Thread.sleep(1000-(velocidad+i*50));
             } catch (InterruptedException e) {
                 System.err.println("🛑:"+ e);
             }
         }
+        downSpeed(10);
     }
 
     //Getters and Setters
