@@ -10,9 +10,11 @@ public class MainGrandPrix {
         vehiculo.startingEngine();
         vehiculo.speedUp();
         vehiculo.speedUp();
+        vehiculo.currentSpeed();
         vehiculo.breaking();
         vehiculo.speedUp();
         vehiculo.breaking();
+        vehiculo.currentSpeed();
         vehiculo.parking();
         vehiculo.stopingEngine();
     }
