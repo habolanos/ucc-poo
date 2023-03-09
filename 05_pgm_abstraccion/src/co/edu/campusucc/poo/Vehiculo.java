@@ -11,7 +11,7 @@ public abstract class Vehiculo {
     private int velocidad;
 
     public String toString() {
-        return "Abstract Class --> Vehiculo";
+        return "Abstract Class --> Vehiculo: "+getTipo()+" "+getCarroseria()+" "+getMarca();
     }
 
     //Abstract Behavior 
@@ -36,7 +36,7 @@ public abstract class Vehiculo {
         }
         addSpeed(10);
     }
-    private int addSpeed(int velocidad){
+    protected int addSpeed(int velocidad){
         setVelocidad(this.velocidad+velocidad);
         return getVelocidad();
     }

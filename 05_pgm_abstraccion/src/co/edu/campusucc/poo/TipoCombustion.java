@@ -34,8 +34,4 @@ public class TipoCombustion extends Vehiculo {
         }
         System.out.println("Stoped...🛑");        
     }
-
-    public String toString() {
-        return "Objeto TipoCombustion []";
-    }
 }
