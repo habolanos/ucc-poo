@@ -8,20 +8,21 @@ public class ThreadExtends extends Thread{
     {
         System.out.println("Thread Started Running...on UCC University");
         System.out.println("Random Times: "+times);
-        printTimes();
+        try {
+            printTimes();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     //Defined Behavior
-    public void printTimes(){
+    public void printTimes() throws Exception{
         int timesCount = 0;
         while (timesCount<=times) {
             System.out.print("-");
             timesCount++;
-            try {
-                Thread.sleep(50);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            Thread.sleep(50);
         }
         System.out.println("> OK");
     }
