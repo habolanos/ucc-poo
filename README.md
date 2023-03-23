@@ -5,9 +5,9 @@ Curso Programacion Orientada a Objetos de la UCC
 
 |Programming Language |Folder              |Status        |
 |---------------------|--------------------|--------------|
-|C++                  |[`c++`](./c++)      |`Coming Soon` |
+|C++                  |[`c++`](./c++)      |`In Progress` |
 |Java                 |[`java`](./java)    |`In Progress` |
-|Python               |[`python`](./python)|`Pending`     |
+|Python               |[`python`](./python)|`Comming Soon`     |
 |Ruby                 |[`ruby`](./ruby)    |`Pending`     |
 
 ## Next Projects
