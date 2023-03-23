@@ -10,15 +10,21 @@ int main() {
 	int icontador= 0;
 	int i = 0;
 
-	cout << "Ingrese un valor para calcular una suma.\n";
+	cout << "+-----------------------------------------+\n";
+	cout << "| PGM: 01_pgm_basico/pgm_basico.cpp       |\n";
+	cout << "| Language: C++                           |\n";
+	cout << "| Autor: Harold Adrian                    |\n";
+	cout << "+-----------------------------------------+\n";
+	cout << "";
+	cout << "💾 Ingrese un valor: ";
 	cin >> ivalor;
-	cout << "Usted ingreso: " << ivalor << endl;
+	cout << "💽 Usted ingreso: " << ivalor << endl;
 
 	for (i = 1; i <= ivalor; i++) {
 		icontador+=i;
 	}
 
-	cout << "El resultado es: " << icontador << endl; 
+	cout << "🔥 El resultado sumado en serie es: " << icontador << endl; 
 
 	return 0;
 }
