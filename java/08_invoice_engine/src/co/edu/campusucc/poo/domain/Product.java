@@ -1,4 +1,4 @@
-package java.08_invoice_engine.src.co.edu.campusucc.poo.domain;
+package co.edu.campusucc.poo.domain;
 
 public class Product {
     
