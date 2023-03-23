@@ -11,7 +11,7 @@ int main() {
 	int i = 0;
 
 	cout << "+-----------------------------------------+\n";
-	cout << "| PGM: pgm_basico                         |\n";
+	cout << "| PGM: 01_pgm_basico/pgm_basico.cpp       |\n";
 	cout << "| Language: C++                           |\n";
 	cout << "| Autor: Harold Adrian                    |\n";
 	cout << "+-----------------------------------------+\n";
