@@ -10,7 +10,13 @@ int main() {
 	int icontador= 0;
 	int i = 0;
 
-	cout << "Ingrese un valor para calcular una suma.\n";
+	cout << "+-----------------------------------------+";
+	cout << "| PGM: pgm_basico                         |";
+	cout << "| Language: C++                           |";
+	cout << "| Autor: Harold Adrian                    |";
+	cout << "+-----------------------------------------+";
+	cout << "";
+	cout << "Ingrese un valor para calcular una suma en serie.\n";
 	cin >> ivalor;
 	cout << "Usted ingreso: " << ivalor << endl;
 
@@ -18,7 +24,7 @@ int main() {
 		icontador+=i;
 	}
 
-	cout << "El resultado es: " << icontador << endl; 
+	cout << "El resultado sumado en serie es: " << icontador << endl; 
 
 	return 0;
 }
