@@ -1,6 +1,9 @@
-package co.edu.campusucc.poo;
+package co.edu.campusucc.poo.impl;
 
-public class TipoMilitar extends Avion {
+import co.edu.campusucc.poo.abst.Avion;
+import co.edu.campusucc.poo.interfaces.AvionMilitar;
+
+public class TipoMilitar extends Avion implements AvionMilitar {
 
     public TipoMilitar(){
         super();
@@ -52,5 +55,32 @@ public class TipoMilitar extends Avion {
             }
         }
         System.out.println("Stoped...⚡⚡");
+    }
+
+    public void shootMissiles(){
+        for (int i = 0; i < 5; i++) {
+            System.out.println("🚀🚀 Missiles ready to fire 🔥🔥🔥");
+            try {
+                Thread.sleep(1000 - (i * 50));
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
+            }
+        }
+    }
+
+    @Override
+    public void chargeFuel(int litros) {
+        super.chargeFuel(litros);
+        System.out.println("");
+        for (int i = 0; i < litros; i++) {
+            try {
+                System.out.print("⛽");
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
+            }
+        }
+        System.out.println("");
+        System.out.println("⛽ Full Fuel ✅");
     }
 }

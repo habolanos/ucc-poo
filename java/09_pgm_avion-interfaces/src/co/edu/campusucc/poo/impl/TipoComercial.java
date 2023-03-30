@@ -1,4 +1,6 @@
-package co.edu.campusucc.poo;
+package co.edu.campusucc.poo.impl;
+
+import co.edu.campusucc.poo.abst.Avion;
 
 public class TipoComercial extends Avion {
 

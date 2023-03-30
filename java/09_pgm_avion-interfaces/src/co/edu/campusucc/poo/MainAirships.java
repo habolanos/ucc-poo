@@ -1,5 +1,8 @@
 package co.edu.campusucc.poo;
 
+import co.edu.campusucc.poo.abst.Avion;
+import co.edu.campusucc.poo.impl.*;
+
 public class MainAirships {
     public static void main(String[] args) {
 
@@ -18,6 +21,10 @@ public class MainAirships {
         avion = new TipoCarga();
         avion.setMarca("Airbus");
         avion.setTipo("Carga");
+        avion.chargeFuel(500);
+        avion.openDoors();
+        avion.pickUp();
+        avion.closeDoors();
         System.out.println(avion);
 
         avion.startingEngine();
@@ -34,6 +41,7 @@ public class MainAirships {
         avion.setTipo("Aereonave de Combate");
         System.out.println(avion);
 
+        avion.chargeFuel(200);
         avion.startingEngine();
         avion.speedUp();
         avion.speedUp();
@@ -49,6 +57,7 @@ public class MainAirships {
         avion.setTipo("Avion de Agricultura");
         System.out.println(avion);
 
+        avion.chargeFuel(100);
         avion.startingEngine();
         avion.speedUp();
         avion.speedUp();
@@ -58,7 +67,5 @@ public class MainAirships {
         avion.descent();
         avion.landing();
         avion.stopingEngine();
-
     }
-    
 }
