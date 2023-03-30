@@ -1,11 +1,8 @@
 package co.edu.campusucc.poo.abst;
 
-import co.edu.campusucc.poo.interfaces.AvionCarga;
-import co.edu.campusucc.poo.interfaces.AvionGranja;
-import co.edu.campusucc.poo.interfaces.AvionMilitar;
 import co.edu.campusucc.poo.interfaces.AvionStandar;
 
-public abstract class Avion implements AvionStandar, AvionCarga, AvionMilitar, AvionGranja {
+public abstract class Avion implements AvionStandar {
     public Avion() {
     }
 

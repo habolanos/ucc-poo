@@ -1,6 +1,6 @@
 package co.edu.campusucc.poo.interfaces;
 
-public interface AvionStandar {
+public interface AvionStandar extends AvionCarga, AvionMilitar, AvionGranja {
     // Abstract Behavior
     void startingEngine();
     void stopingEngine();
@@ -11,4 +11,8 @@ public interface AvionStandar {
     void landing();
     void descent();
     void chargeFuel(int litros);
+
+    //Getter & Setter
+    void setMarca(String marca);
+    void setTipo(String tipo);    
 }
